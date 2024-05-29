@@ -1,0 +1,798 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Proflie General-web</title><style>html{font-size:17.000000px;}</style><style>/* copy from https://github.com/sindresorhus/github-markdown-css/ */
+
+html,body{background-color: #181818;}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5;
+  color: #d8d8d8;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+  font-size: 1rem;
+  word-wrap: break-word;
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.markdown-body figure{margin:0;padding:0; display:table;}
+.markdown-body figure figcaption{font-size:92%; text-align:center; color:#a16946;}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -1.25rem;
+  padding-right: 0.25rem;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #7cafc2;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: initial;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+.markdown-body strong{
+  color: #86c1b9;
+}
+.markdown-body em{
+  color: #86c1b9;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 0.9rem;
+}
+
+.markdown-body hr {
+  box-sizing: initial;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #dc9656;
+  text-decoration: none;
+}
+.markdown-body mjx-container[jax="SVG"] > svg a{fill:#dc9656;stroke: #dc9656;}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr:after,
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 0.1875rem 0.3125rem;
+  font: 0.75rem SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  line-height: 0.75rem;
+  color: #a16946;
+  vertical-align: middle;
+  background-color: #1e1e1e;
+  border: 1px solid #343434;
+  border-radius: 0.1875rem;
+}
+
+.markdown-body p {
+  margin-top: 0;
+  margin-bottom: 0.625rem;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  font-size: 0.75rem;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.markdown-body:after,
+.markdown-body:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body:after {
+  clear: both;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body details,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.markdown-body hr {
+  height: .25rem;
+  padding: 0;
+  margin: 1.5rem 0;
+  background-color: #343434;
+  border: 0;
+}
+
+.markdown-body blockquote {
+  padding: 0 1rem;
+  color: #a7a7a7;
+  border-left: .25rem solid #ab4642;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  padding-bottom: .3rem;
+  border-bottom: 1px solid #2e2e2e;
+  color: #7cafc2;
+}
+
+.markdown-body h2 {
+  font-size: 1.5rem;
+  color: #7cafc2;
+}
+
+.markdown-body h3 {
+  font-size: 1.25rem;
+  color: #7cafc2;
+}
+
+.markdown-body h4 {
+  font-size: 1rem;
+  color: #7cafc2;
+}
+
+.markdown-body h5 {
+  font-size: .875rem;
+  color: #7cafc2;
+}
+
+.markdown-body h6 {
+  font-size: .85rem;
+  color: #7cafc2;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2rem;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 1rem;
+}
+
+.markdown-body li+li {
+  margin-top: .25rem;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.markdown-body dl dd {
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #5c5c5c;
+}
+
+.markdown-body table tr {
+  background-color: #181818;
+  border-top: 1px solid #5c5c5c;
+}
+
+.markdown-body table th {
+  background-color: #2e2e2e;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #1d1d1d;
+}
+
+.markdown-body img,.markdown-body video {
+  max-width: 100%;
+  box-sizing: initial;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 1.25rem;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 1.25rem;
+}
+
+.markdown-body code {
+  padding: .2rem .4rem;
+  margin: 0;
+  font-size: 85%;
+  background-color: #1e1e1e;
+  color: #a16946;
+  border-radius: 0.1875rem;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+   font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 1rem;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 1rem;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #1e1e1e;
+  border-radius: 0.1875rem;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: initial;
+  border: 0;
+  color: #a16946;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 0.1875rem;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2rem .25rem -1.6rem;
+  vertical-align: middle;
+}
+
+.markdown-body .task-list-item input[type="checkbox"]{
+-webkit-appearance: none;-moz-appearance: none;appearance: none;
+width: 0.875rem; height: 0.875rem;outline: none;
+border: 1px solid #dc9656;border-radius: 2px; 
+}
+.markdown-body .task-list-item input[type="checkbox"]:checked {
+  background:no-repeat center/80% url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22%23dc9656%22%20d%3D%22M173.898%20439.404l-166.4-166.4c-9.997-9.997-9.997-26.206%200-36.204l36.203-36.204c9.997-9.998%2026.207-9.998%2036.204%200L192%20312.69%20432.095%2072.596c9.997-9.997%2026.207-9.997%2036.204%200l36.203%2036.204c9.997%209.997%209.997%2026.206%200%2036.204l-294.4%20294.401c-9.998%209.997-26.207%209.997-36.204-.001z%22%2F%3E%3C%2Fsvg%3E") ;
+}
+
+.markdown-body section.footnotes{
+    margin-top:3rem;
+    border-top:solid 1px #343434;
+    padding-top:0px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .markdown-body mark{color: #111;}
+}
+
+/* PrismJS 1.23.0
+https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript */
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+
+code[class*="language-"],
+pre[class*="language-"] {
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+@media print {
+    code[class*="language-"],
+    pre[class*="language-"] {
+        text-shadow: none;
+    }
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+    padding: 1rem;
+    margin: .5rem 0;
+    overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+    background-color: #1e1e1e;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+    padding: .1rem;
+    border-radius: .3rem;
+    white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: #585858;
+}
+
+.token.punctuation {
+    color: #a1b56c;
+}
+
+.token.namespace {
+    opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+    color: #f7ca88;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+    color: #a1b56c;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+    color: #$$codeBlockColor$$;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+    color: #ba8baf;
+}
+
+.token.function,
+.token.class-name {
+    color: #86c1b9;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+    color: #dc9656;
+}
+
+.token.important,
+.token.bold {
+    font-weight: bold;
+}
+.token.italic {
+    font-style: italic;
+}
+
+.token.entity {
+    cursor: help;
+}
+
+
+pre[class*="language-"].line-numbers {
+  position: relative;
+  padding-left: 3.8rem;
+  counter-reset: linenumber;
+}
+
+pre[class*="language-"].line-numbers > code {
+  position: relative;
+  white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8rem;
+  width: 3rem; /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+  border-right: 1px solid #565656;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+  .line-numbers-rows > span {
+    display: block;
+    counter-increment: linenumber;
+  }
+
+    .line-numbers-rows > span:before {
+      content: counter(linenumber);
+      color: #565656;
+      display: block;
+      padding-right: 0.8rem;
+      text-align: right;
+    }
+
+
+</style><style>.mweb-charts{background:#fff;}
+body{ box-sizing: border-box;
+    margin: 0 auto;}
+@media print{
+    pre, code, pre code {
+     overflow: visible !important;
+     white-space: pre-wrap !important;       /* css-3 */
+     white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+     white-space: -pre-wrap !important;      /* Opera 4-6 */
+     white-space: -o-pre-wrap !important;    /* Opera 7 */
+     word-wrap: break-word !important;       /* Internet Explorer 5.5+ */
+    }
+    html,body{margin:0;padding:4px;}
+}
+
+
+
+div.code-toolbar {
+  position: relative;
+}
+
+div.code-toolbar > .toolbar {
+  position: absolute;
+  z-index: 10;
+  top: .3em;
+  right: .2em;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+div.code-toolbar:hover > .toolbar {
+  opacity: 1;
+}
+
+/* Separate line b/c rules are thrown out if selector is invalid.
+   IE11 and old Edge versions don't support :focus-within. */
+div.code-toolbar:focus-within > .toolbar {
+  opacity: 1;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item {
+  display: inline-block;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > a {
+  cursor: pointer;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > button {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-user-select: none; /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > a,
+div.code-toolbar > .toolbar > .toolbar-item > button,
+div.code-toolbar > .toolbar > .toolbar-item > span {
+  color: inherit;
+  font-size: .8em;
+  padding: 4px .5em;
+  background: #f5f2f0;
+  background: rgba(224, 224, 224, 0.4);
+  box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
+  border-radius: .5em;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > a:hover,
+div.code-toolbar > .toolbar > .toolbar-item > a:focus,
+div.code-toolbar > .toolbar > .toolbar-item > button:hover,
+div.code-toolbar > .toolbar > .toolbar-item > button:focus,
+div.code-toolbar > .toolbar > .toolbar-item > span:hover,
+div.code-toolbar > .toolbar > .toolbar-item > span:focus {
+  color: inherit;
+  text-decoration: none;
+}
+</style> <style>body{max-width:808px; padding:24px;}</style></head><body><div id='markdown_content' class='markdown-body'><h1><a id="%E5%BE%90%E5%98%89%E4%BC%9F" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>徐嘉伟</h1>
+<p>电话：15333511997 ｜ 邮箱：<a href="mailto:15333511997@163.com">15333511997@163.com</a> ｜ 作品集：<a href="https://002t.github.io">https://002t.github.io</a><br />
+年龄：26 ｜ 性别：男 ｜ 身高：185 ｜ 民族：汉 ｜住址：山西省太原市<br />
+应届毕业生</p>
+<hr />
+<h3><a id="%E6%95%99%E8%82%B2%E7%BB%8F%E5%8E%86" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>教育经历</h3>
+<p><strong>中原工学院</strong> ｜ 视觉传达 本科 艺术设计学院 ｜ 2015.09 - 2019.06</p>
+<p><strong>台湾中原大学</strong> ｜ 商业设计 交流生 设计学院 ｜ 2017.09 - 2018.01<br />
+本科就读期间经校内选拔赴台湾中原大学商业设计系研修，并于2017年9月16日参与“台湾文化研习”活动。相关专业课程：网页设计、包装设计、数位音乐制作、三维影视等。</p>
+<p><strong>兰州交通大学</strong> ｜ 数字媒体 硕士 艺术设计学院 ｜ 2021.09 - 2024.06<br />
+主修方向：虚拟现实，GPA：3.36，相关专业课程：虚拟现实、数字影像三维合成、景观生态学专题研究、品牌与视觉表达综合研究、产品设计与开发专题研究等。</p>
+<hr />
+<h3><a id="%E5%B7%A5%E4%BD%9C%E7%BB%8F%E5%8E%86" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>工作经历</h3>
+<p><strong>郑州青山向上品牌设计事务所</strong> ｜ 设计 ｜ 2019.08 - 2020.02<br />
+主要负责公司海报、标识等设计工作。项目参与：妍在护肤品、弘毅医院管理、哈佛月子会所、缘梦健身、百鸟衔花女装等。</p>
+<p><strong>扬州白夜文化艺术有限公司</strong> ｜ 建模（兼职） ｜ 2019.10 - 2020.04<br />
+主要从事公司三维建模、三维动画、视频剪辑等制作工作。</p>
+<p><strong>西北师范大学知行学院</strong> ｜ 授课（助教）｜ 2023.02 - 2023.06<br />
+在导师安排与协助下，完成知行学院本科动画班32个学时的虚拟现实课程授课，主要讲授 Unity 软件的操作与虚拟现实的概念及相关应用开发，并收获学生广泛好评。</p>
+<p><strong>智联共创（甘肃）传媒科技集团有限公司</strong> ｜ 程序（实习） ｜ 2023.09 - 2024.01<br />
+主要负责并完成公司在兰州大学资源环境学院虚拟仿真实验系统项目中的虚拟现实应用程序设计及开发工作，并已投入相关教学课程使用。</p>
+<hr />
+<h3><a id="%E4%B8%93%E4%B8%9A%E6%8A%80%E8%83%BD" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>专业技能</h3>
+<p><strong>平面图形：</strong> Photoshop、Illustrator<br />
+熟练掌握软件操作与相关海报、标识等制作流程与设计方法。</p>
+<p><strong>三维动画：</strong> Blender、Cinema 4d<br />
+熟练掌握软件操作并可独立完成数字资产的建模、UV、材质、绑定、动画、渲染等全流程制作。</p>
+<p><strong>影视后期：</strong> After Effect<br />
+基本掌握软件操作与二维动画、影视后期制作方法。</p>
+<p><strong>游戏引擎：</strong> Unity<br />
+熟练掌握软件操作与动画、C#脚本、可视化编程、粒子特效、自定义着色器等模块，并可独立完成2D、3D、FPS、ACT等类型游戏开发与HTC、Quest等平台虚拟现实开发。</p>
+<p><strong>单片机开发：</strong> Arduino<br />
+基本掌握 Arduino 平台电路搭建与编程，并可基于物联网实现与 Unity 的联动。</p>
+<p><strong>网页前端：</strong> HTML、CSS<br />
+基本掌握HTML、JavaScript、CSS等前端开发技术与网页设计流程，并可独立完成静态网站的制作。</p>
+<hr />
+<h3><a id="%E8%8D%A3%E8%AA%89%E5%A5%96%E9%A1%B9" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>荣誉奖项</h3>
+<p><strong>2021</strong> - 海报作品入选甘肃省青年美术家协会“学习党的十九届六中全会精神”海报设计线上展</p>
+<p><strong>2021</strong> - 插画作品入选甘肃省青年美术家协会“疫情防控 心暖古城”美术作品展</p>
+<p><strong>2022</strong> - 研究生学业奖学金</p>
+<p><strong>2022</strong> - 第十六届中国好创意全国数字艺术大赛 数字空间组 三等奖</p>
+<p><strong>2022</strong> - 第八届中国国际“互联网+”大学生创新创业大赛甘肃省分赛 铜奖</p>
+<p><strong>2024</strong> - 论文《VR技术在校园文创产业中的发展与应用》第一作者刊登《丝网印刷》杂志2024年6-7月刊</p>
+<hr />
+<h3><a id="%E4%B8%AA%E4%BA%BA%E6%80%BB%E7%BB%93" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>个人总结</h3>
+<p>通过数年学习生涯，本人在平面设计、三维动画、游戏制作、虚拟现实等方向均掌握了较为扎实的知识体系与相关专业软件与技能，且本人热爱体育运动，在网球、乒乓球、游泳等项目中均十分擅长。
+在西北师范大学知行学院在导师协助下完成的授课经历让我深深喜欢上高校教师的职业方向，非常希望能在贵校任职。</p>
+</div></body></html>

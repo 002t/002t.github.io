@@ -1,0 +1,62 @@
+main{
+    background-color: black;
+    height: 100%;
+    overflow: auto;
+}
+main h2{
+    margin-left: 10px;
+}
+#title{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    margin-left: 10px;
+}
+.worksContenter{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.workBox{
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    margin: 10px 0;
+    padding: 0px;
+    cursor: pointer;
+}
+.workBox:hover{
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+    box-shadow: 0 0 100px 30px rgba(255, 255, 255, 0.3);
+    transition: 1s ease-out;
+}
+.workBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.workOverlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    flex-direction: column;
+    align-items:center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 50px 10px 30px 10px;
+}
+.overlayImage{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.overlayImage img{
+    object-fit: contain;
+}

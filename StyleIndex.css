@@ -1,0 +1,43 @@
+#scrollImage{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100%;
+    animation: scrollImage 20s infinite;
+}
+#scrollImage img{
+    background-color: black;
+    width: 1024px;
+    object-fit: cover;
+}
+#scrollImageOverlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 2000px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    right: 1024px;
+}
+#title{
+    position: absolute;
+    top: 35%;
+    z-index: 2;
+    margin-left: 10px;
+}
+@keyframes scrollImage{
+    0%, 15%{
+        transform: translateX(0);
+    }
+    20%, 35%{
+        transform: translateX(1024px);
+    } 
+    40%, 55%{
+        transform: translateX(2048px);
+    }
+    60%, 75%{
+        transform: translateX(3072px);
+    }
+    80%, 95%{
+        transform: translateX(4096px);
+    }
+}

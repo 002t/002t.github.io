@@ -1,0 +1,32 @@
+h1{
+    margin: 0;
+    font-size:100px;
+    font-weight:bolder;
+    color: transparent;
+    background: linear-gradient(45deg,rgb(255, 255, 255),rgb(75, 99, 173),rgb(123, 214, 230),rgb(255, 180, 130),rgb(255, 255, 255));
+    background-size: 500% 500%;
+    background-clip: text;
+    animation: gradientText 6s ease infinite alternate;
+}
+h2{
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+}
+
+@keyframes gradientText{
+    from{
+        background-position: 0% 50%;
+    }
+    to{
+        background-position: 100% 50%;
+    }
+}
