@@ -2,6 +2,7 @@ h1{
     margin: 0;
     font-size:100px;
     font-weight:bolder;
+    line-height: 100px;
     color: transparent;
     background: linear-gradient(45deg,rgb(255, 255, 255),rgb(75, 99, 173),rgb(123, 214, 230),rgb(255, 180, 130),rgb(255, 255, 255));
     background-size: 500% 500%;
@@ -11,7 +12,6 @@ h1{
 h2{
     color: white;
     font-weight: bold;
-    margin-top: 10px;
 }
 
 a{
